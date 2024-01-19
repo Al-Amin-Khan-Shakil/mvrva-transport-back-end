@@ -22,3 +22,20 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+```
+```
+curl --header "Content-Type: application/json" ^     
+ --request POST ^      
+ --data "{\"user\": {\"email\":\"r@dev.com\", \"password\":\"12345678\"}}" ^      
+ http://localhost:3000/session
+
+curl --header "Content-Type: application/json" ^     
+ --request POST ^      
+ --data "{\"user\": {\"email\":\"r@dev.com\", \"password\":\"12345678\", \"password_confirmation\":\"12345678\"}}" ^      
+ http://localhost:3000/registrations
+
+ curl --header "Content-Type: application/json" ^     
+ --request delete ^            
+ http://localhost:3000/{user_id}/logout
+```
