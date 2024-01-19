@@ -28,7 +28,7 @@ Things you may want to cover:
 curl --header "Content-Type: application/json" ^     
  --request POST ^      
  --data "{\"user\": {\"email\":\"r@dev.com\", \"password\":\"12345678\"}}" ^      
- http://localhost:3000/session
+ http://localhost:3000/sessions
 
 curl --header "Content-Type: application/json" ^     
  --request POST ^      
