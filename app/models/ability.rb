@@ -8,7 +8,10 @@ class Ability
       can :manage, :all
     elsif @user.user?
       can :read, :all
-      can %i[destroy create], Reservation, user_id: @user.id
+      can :destroy, Reservation, user_id: @user.id
+      can :create, Reservation do |reservation|
+        reservation.user_id == @user.id
+      end
     else
       can %i[index show], Service
     end

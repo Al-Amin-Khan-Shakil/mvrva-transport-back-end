@@ -13,12 +13,18 @@ class Api::V1::ReservationsController < ApplicationController
   end
 
   def create
-    @reservation = current_user.reservations.new(reservation_params)
-
-    if @reservation.save
-      render json: @reservation, status: :ok
+    if current_user
+      @reservation = current_user.reservations.build(reservation_params)
+      Rails.logger.debug "Current user: #{current_user.inspect}"
+      Rails.logger.debug "New reservation: #{@reservation.inspect}"
+      authorize! :create, @reservation
+      if @reservation.save
+        render json: @reservation, status: :ok
+      else
+        render json: { data: @reservation.errors.full_messages, status: 'failed' }, status: :unprocessable_entity
+      end
     else
-      render json: { data: @reservation.errors.full_messages, status: 'failed' }, status: :unprocessable_entity
+      render json: { data: 'User not authenticated', status: 'failed' }, status: :unauthorized
     end
   end
 
@@ -39,7 +45,6 @@ class Api::V1::ReservationsController < ApplicationController
   end
 
   def reservation_params
-    params.require(:reservation).permit(:pickup_address, :drop_address, :description, :contact, :pickup_date,
-                                        :service_id)
+    params.require(:reservation).permit(:pickup_address, :drop_address, :description, :contact, :pickup_date, :service_id)
   end
 end

@@ -74,7 +74,7 @@ end
 gem 'devise'
 gem 'devise-jwt'
 
-gem 'rack-cors'
+gem 'rack-cors', require: 'rack/cors'
 
 gem 'dry-configurable', '0.11.5'
 
