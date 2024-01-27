@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   end
 
   resources :users, only: [:index]
+  get '/current_user', to: 'users#show_current_user'
 
   get '/member_details' => 'members#index'
 

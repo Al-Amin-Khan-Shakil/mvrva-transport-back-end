@@ -75,4 +75,10 @@ Rails.application.configure do
   config.action_controller.raise_on_missing_callback_actions = true
 
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+  config.hosts << "localhost:3001"
+
+  # Allow public assets to be served from the following domains:
+  config.public_file_server.origins = ['localhost:3001']
+
 end
