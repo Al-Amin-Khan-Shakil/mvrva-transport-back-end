@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pickup_address: MyString
+  drop_address: MyString
+  description: MyString
+  contact: MyString
+  pickup_date: 2024-01-22
+  service: one
+
+two:
+  pickup_address: MyString
+  drop_address: MyString
+  description: MyString
+  contact: MyString
+  pickup_date: 2024-01-22
+  service: two
