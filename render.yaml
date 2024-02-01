@@ -9,7 +9,7 @@ services:
     runtime: ruby
     plan: free
     buildCommand: "./bin/render-build.sh"
-    startCommand: "bundle exec puma -C config/puma.rb"
+    startCommand: "ruby bin/rails server"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
