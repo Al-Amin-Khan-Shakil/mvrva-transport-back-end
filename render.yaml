@@ -1,17 +1,17 @@
 databases:
-  - name: mysite
-    databaseName: mysite
-    user: mysite
+  - name: mvrva_database
+    databaseName: mvrva_database_va63
+    user: mvrva_database_va63_user
 services:
   - type: web
-    name: mysite
+    name: mvrva_transport
     runtime: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: mysite
+          name: mvrva_database
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
