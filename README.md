@@ -24,6 +24,7 @@
   - [👥 Author ](#-author-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
+  - [ Kanban Board ](#-kanban-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
@@ -206,6 +207,11 @@ Use this project in the browsers of desktops and mobile devices
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/Al-Amin-Khan-Shakil/mvrva-transport-back-end/issues).
+
+## Kanban Board <a name="kanban"></a>
+Visit the [kanban board](https://github.com/users/Al-Amin-Khan-Shakil/projects/2/views/1)
+link to initial kanban board:
+The final number of team members is 5
 
 ## ⭐️ Show your support <a name="support"></a>
 
