@@ -91,7 +91,7 @@ git clone git@github.com:Al-Amin-Khan-Shakil/mvrva-transport-back-end.git
 In order to run this project you need:
 
 - Link to front end part of the site [FrontEnd](https://github.com/Al-Amin-Khan-Shakil/mvrva-transport-front-end/)
-- Ruby 3.3.0
+- Ruby 3.1.2
 - Browser (Google Chrome, Mozilla Firefox, Safari or any other browser)
 - Run `Rails Server`
 
@@ -128,29 +128,27 @@ Use this project in the browsers of desktops and mobile devices
 
 ### API Documentation
 
-`New User Registration` user_registration  POST   http://127.0.0.1:4000/users/
+`New User Registration` user_registration  POST   https://mvrva-transport-11td.onrender.com/users/
 
-`New User Session`  GET http://127.0.0.1:4000/users/sign_in     
+`New User Session`  GET https://mvrva-transport-11td.onrender.com/users/sign_in     
 
-`Logout User` DELETE      http://127.0.0.1:4000/users/sign_out  
+`Logout User` DELETE      https://mvrva-transport-11td.onrender.com/users/sign_out  
 
 `API Services` 
-- `Get all service list` GET    http://127.0.0.1:4000/api/v1/services   
-- `Create a new service` POST   http://127.0.0.1:4000/api/v1/services  
+- `Get all service list` GET    https://mvrva-transport-11td.onrender.com/api/v1/services   
+- `Create a new service` POST   https://mvrva-transport-11td.onrender.com/api/v1/services  
 
 `API Individual Service`
-- `Get specific service through id` GET    http://127.0.0.1:4000/api/v1/services/:id    
-- `Delete specific service through id` DELETE http://127.0.0.1:4000/api/v1/services/:id  
+- `Get specific service through id` GET    https://mvrva-transport-11td.onrender.com/api/v1/services/:id    
+- `Delete specific service through id` DELETE https://mvrva-transport-11td.onrender.com/api/v1/services/:id  
 
 `API Reservations` 
-- `Get all reservation list` GET    http://127.0.0.1:4000/api/v1/reservations    
-- `Create a new reservation` POST   http://127.0.0.1:4000/api/v1/reservations   
+- `Get all reservation list` GET    https://mvrva-transport-11td.onrender.com/api/v1/reservations    
+- `Create a new reservation` POST   https://mvrva-transport-11td.onrender.com/api/v1/reservations   
 
 `API Individual Reservation`
-- `Get specific reservation through id` GET    http://127.0.0.1:4000/api/v1/reservations/:id    
-- `Delete specific reservation through id` DELETE http://127.0.0.1:4000/api/v1/reservations/:id     
-
-[**Note:** some browser do not support (http://127.0.0.1:4000), in that case you should use (http://localhost:4000)]
+- `Get specific reservation through id` GET    https://mvrva-transport-11td.onrender.com/api/v1/reservations/:id    
+- `Delete specific reservation through id` DELETE https://mvrva-transport-11td.onrender.com/api/v1/reservations/:id     
 
 
 ## 👥 Authors <a name="authors"></a>
@@ -161,7 +159,7 @@ Use this project in the browsers of desktops and mobile devices
 - Twitter: [@V_Kanyi](https://twitter.com/V_Kanyi)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/victor-kanyi)
 
-👤 **Vangelis**
+👤 **Vangelis Fotiades**
 
 - [@github](https://github.com/vangelif)
 - [@twitter](https://twitter.com/vangfot)
@@ -219,6 +217,7 @@ If you like this project, please let me know and we can improve it further. You 
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
+We thank [Murtk](https://www.behance.net/muratk) for the design of the frontend created for this project.<br/>
 Acknowledgements and suggestions for improvement are always welcome
 
 - https://stackoverflow.com/questions/53510040/carrierwave-argument-error-nil-location-provided-cant-build-uri-for-an-image
