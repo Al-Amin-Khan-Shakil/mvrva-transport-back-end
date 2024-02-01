@@ -1,11 +1,11 @@
 databases:
   - name: mvrva_database
-    databaseName: mvrva_database
+    databaseName: mvrva_database_v5mg
     user: mvrva_database_user
     plan: free
 services:
   - type: web
-    name: mvrva-transport
+    name: mvrva-database
     runtime: ruby
     plan: free
     buildCommand: "./bin/render-build.sh"
