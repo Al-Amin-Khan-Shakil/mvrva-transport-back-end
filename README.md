@@ -209,9 +209,9 @@ Contributions, issues, and feature requests are welcome!
 Feel free to check the [issues page](https://github.com/Al-Amin-Khan-Shakil/mvrva-transport-back-end/issues).
 
 ## Kanban Board <a name="kanban"></a>
-Visit the [kanban board](https://github.com/users/Al-Amin-Khan-Shakil/projects/2/views/1)
-link to initial kanban board:
-The final number of team members is 5
+- Visit the [kanban board](https://github.com/users/Al-Amin-Khan-Shakil/projects/2/views/1)
+- link to initial kanban board: ![image](https://github.com/Al-Amin-Khan-Shakil/mvrva-transport-back-end/assets/107926388/26492574-5773-4ea1-bce4-2457d2f52c7e)
+- The final number of team members is 5
 
 ## ⭐️ Show your support <a name="support"></a>
 
